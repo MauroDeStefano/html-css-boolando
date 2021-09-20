@@ -1,5 +1,48 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*********** /GLOBA *************/
+
+main .container {
+  width: 70%;
+  margin: 15px auto;
+  background-color: aqua;
+}
+
+.row {
+  text-align: center;
+}
+
+.product {
+  display: inline-block;
+  width: 33%;
+}
+
+.picture > img {
+  margin: 1.5%;
+  display:block;
+  text-align: center;
+  max-width: 100%;
+  position: relative;
+}
+
+
+
+.heart::after{
+  font-size: 25px;
+  content: "\2665";
+  background-color: white;
+  padding: 5px 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
